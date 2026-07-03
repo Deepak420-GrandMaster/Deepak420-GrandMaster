@@ -6,7 +6,7 @@ I turn raw product and user data into reliable pipelines, clear analytics, and A
 
 🔹 **Building toward:** agentic AI for travel — RAG assistants and planning agents grounded in real data
 
-🔹 **Open to:** AI/ML & Data Engineering roles across Europe
+🔹 **Open to:** AI/ML & Data Scientist roles across Europe
 
 **Stack:** Python · SQL · BigQuery · GCP · GA4/GTM · LangChain · ChromaDB · Streamlit
 
