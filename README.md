@@ -8,7 +8,7 @@ I turn raw product and user data into reliable pipelines, clear analytics, and A
 
 🔹 **Open to:** AI/ML & Data Scientist roles across Europe
 
-**Stack:** Python · SQL · BigQuery · GCP · GA4/GTM · LangChain · ChromaDB · Streamlit
+**Stack:** · Agentic AI · Python · SQL · BigQuery · GCP · GA4/GTM · LangChain · ChromaDB · Streamlit · LLM Models 
 
 🌐 [Portfolio](https://deepak420-grandmaster.github.io/Deepak_Prajapati_portfolio.github.io/) · 💼 [LinkedIn](https://linkedin.com/in/deepak-prajapati-695963204) · 📧 deepak.byte07@gmail.com
 
