@@ -1,15 +1,17 @@
-# 💫 About Me:
-🔭 I’m currently on<br>Data analytics, machine learning pipelines, and AI automation projects using real business datasets. I work across SQL, Python, dashboards, and predictive modeling.<br><br>👯 I’m looking to collaborate on<br>Data engineering, applied ML, analytics projects, and AI systems that create measurable business impact.<br><br>🤝 I’m looking for help with<br>Advanced data engineering patterns, production ML, and navigating high-impact data roles in Europe and global markets.<br><br>🌱 I’m currently learning<br>Big Data architecture, cloud data stacks, production-grade ML, and agent-based AI systems as part of my MSc in Big Data & AI.<br><br>💬 Ask me about<br>SQL, Python, data analytics, dashboards, ML models, QC workflows, automation, and decision-focused data systems.<br><br>⚡ Fun fact<br>I like building calm, precise systems, whether it’s a data pipeline, an AI model, or my own career path.
+### Data & Analytics Engineer @ TravelJuice — Sophia Antipolis, France 🇫🇷
 
+I turn raw product and user data into reliable pipelines, clear analytics, and AI systems that teams can make decisions with.
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deepak-prajapati-695963204/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:deepak.byte07@gmail.com) 
+🔹 **What I do:** build data pipelines, tracking, and BI dashboards end-to-end — from data collection to deployed insight
 
-# 💻 Tech Stack:
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white) ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![mlflow](https://img.shields.io/badge/mlflow-%23d9ead3.svg?style=for-the-badge&logo=numpy&logoColor=blue) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![Scipy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=Deepak420-GrandMaster&theme=dark&hide_border=true&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=Deepak420-GrandMaster&theme=dark&hide_border=true)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Deepak420-GrandMaster&theme=dark&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
+🔹 **Building toward:** agentic AI for travel — RAG assistants and planning agents grounded in real data
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+🔹 **Open to:** AI/ML & Data Engineering roles across Europe
+
+**Stack:** Python · SQL · BigQuery · GCP · GA4/GTM · LangChain · ChromaDB · Streamlit
+
+🌐 [Portfolio](https://deepak420-grandmaster.github.io/Deepak_Prajapati_portfolio.github.io/) · 💼 [LinkedIn](https://linkedin.com/in/deepak-prajapati-695963204) · 📧 deepak.byte07@gmail.com
+
+---
+
+*Building calm, precise systems — whether a data pipeline, an AI agent, or my own career path.*
