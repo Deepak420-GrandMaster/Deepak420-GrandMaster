@@ -1,0 +1,54 @@
+name: Update profile cards
+
+on:
+  schedule:
+    - cron: "17 5 * * *"      # daily, 05:17 UTC
+  workflow_dispatch:           # run it by hand from the Actions tab
+  push:
+    branches: [main]
+    paths: ["scripts/**", ".github/workflows/profile.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  stats:
+    name: Refresh stats and language cards
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate stats.svg and languages.svg
+        env:
+          # Optional: add a PROFILE_TOKEN secret (classic PAT, read:user) to count
+          # private contributions. Without it the default token is used (public data only).
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_stats.py --user "${{ github.repository_owner }}"
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats.svg assets/languages.svg
+          git diff --staged --quiet || (git commit -m "chore: refresh profile stats" && git push)
+
+  snake:
+    name: Draw the contribution snake
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg?color_snake=#8B7BE0&color_dots=#F4EEFF,#E4DAFF,#CDBDFB,#B9A6F5,#8B7BE0
+
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

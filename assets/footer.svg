@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="140" viewBox="0 0 1000 140" role="img" aria-label="Footer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFEAF2"/><stop offset="0.5" stop-color="#F1EBFF"/><stop offset="1" stop-color="#E4F4FD"/>
+    </linearGradient>
+    <clipPath id="c"><rect width="1000" height="140" rx="28"/></clipPath>
+    <style>
+      .sans { font-family: 'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+      .rise { animation: rise .8s ease-out both; }
+      @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+
+      .w1 { animation: sway 8s ease-in-out infinite; }
+      .w2 { animation: sway 11s ease-in-out infinite reverse; }
+      @keyframes sway { 0%,100% { transform: translateX(0); } 50% { transform: translateX(-60px); } }
+    </style>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="1000" height="140" fill="url(#bg)"/>
+    <path class="w1" d="M0 96 C 100 70, 200 120, 300 96 S 500 70, 600 96 S 800 120, 900 96 S 1100 70, 1200 96 V140 H0Z" fill="#FFFFFF" fill-opacity="0.55"/>
+    <path class="w2" d="M0 112 C 120 90, 220 132, 340 112 S 560 90, 680 112 S 900 132, 1020 112 S 1140 96, 1200 112 V140 H0Z" fill="#FFFFFF" fill-opacity="0.7"/>
+  </g>
+  <rect x="1" y="1" width="998" height="138" rx="27" fill="none" stroke="#E4DAFF" stroke-width="2"/>
+  <text class="sans" x="500" y="58" font-size="20" font-weight="700" fill="#3B3552" text-anchor="middle">Building calm, precise systems</text>
+  <text class="mono" x="500" y="84" font-size="13" fill="#7A7394" text-anchor="middle">whether a data pipeline, an AI agent, or my own career path</text>
+</svg>

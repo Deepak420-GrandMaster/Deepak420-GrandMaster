@@ -1,17 +1,38 @@
-### Data & Analytics Engineer @ TravelJuice — Sophia Antipolis, France 🇫🇷
+<div align="center">
 
-I turn raw product and user data into reliable pipelines, clear analytics, and AI systems that teams can make decisions with.
+<img src="assets/header.svg" alt="Deepak Prajapati, Data & Analytics Engineer at TravelJuice" width="100%"/>
 
-🔹 **What I do:** build data pipelines, tracking, and BI dashboards end-to-end — from data collection to deployed insight
+<p>
+  <a href="https://deepak420-grandmaster.github.io/Deepak_Prajapati_portfolio.github.io/">🌐 Portfolio</a>
+  &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/deepak-prajapati-695963204">💼 LinkedIn</a>
+  &nbsp;·&nbsp;
+  <a href="mailto:deepak.byte07@gmail.com">📧 Email</a>
+</p>
 
-🔹 **Building toward:** agentic AI for travel — RAG assistants and planning agents grounded in real data
+<img src="assets/about.svg" alt="What I do and what I am building" width="100%"/>
 
-🔹 **Open to:** AI/ML & Data Scientist roles across Europe
+<img src="assets/stack.svg" alt="Tech stack" width="100%"/>
 
-**Stack:** · Agentic AI · Python · SQL · BigQuery · GCP · GA4/GTM · LangChain · ChromaDB · Streamlit · LLM Models 
+<img src="assets/stats.svg" alt="GitHub activity" width="100%"/>
 
-🌐 [Portfolio](https://deepak420-grandmaster.github.io/Deepak_Prajapati_portfolio.github.io/) · 💼 [LinkedIn](https://linkedin.com/in/deepak-prajapati-695963204) · 📧 deepak.byte07@gmail.com
+<img src="assets/languages.svg" alt="Language spread across my public repos" width="100%"/>
 
----
+<img src="https://raw.githubusercontent.com/Deepak420-GrandMaster/Deepak420-GrandMaster/output/snake.svg" alt="Contribution snake" width="100%"/>
 
-*Building calm, precise systems — whether a data pipeline, an AI agent, or my own career path.*
+<table>
+  <tr>
+    <td width="33%"><a href="https://github.com/Deepak420-GrandMaster/Airbnb-agentic-rag"><img src="assets/project-1.svg" alt="Airbnb-agentic-rag" width="100%"/></a></td>
+    <td width="33%"><a href="https://github.com/Deepak420-GrandMaster/Agentic-AI"><img src="assets/project-2.svg" alt="Agentic-AI" width="100%"/></a></td>
+    <td width="33%"><a href="https://github.com/Deepak420-GrandMaster/Stock-Market-Analysis"><img src="assets/project-3.svg" alt="Stock-Market-Analysis" width="100%"/></a></td>
+  </tr>
+  <tr>
+    <td width="33%"><a href="https://github.com/Deepak420-GrandMaster/Fraud-Detection"><img src="assets/project-4.svg" alt="Fraud-Detection" width="100%"/></a></td>
+    <td width="33%"><a href="https://github.com/Deepak420-GrandMaster/Flight-Fare-Prediction"><img src="assets/project-5.svg" alt="Flight-Fare-Prediction" width="100%"/></a></td>
+    <td width="33%"><a href="https://github.com/Deepak420-GrandMaster/SQL-Project"><img src="assets/project-6.svg" alt="SQL-Project" width="100%"/></a></td>
+  </tr>
+</table>
+
+<img src="assets/footer.svg" alt="Building calm, precise systems" width="100%"/>
+
+</div>

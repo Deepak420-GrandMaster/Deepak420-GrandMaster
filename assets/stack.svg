@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="338" viewBox="0 0 1000 338" role="img" aria-label="Tech stack">
+  <defs><style>
+      .sans { font-family: 'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+      .rise { animation: rise .8s ease-out both; }
+      @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style></defs>
+  <rect x="1" y="1" width="998" height="336" rx="28" fill="#FFFFFF" stroke="#EDE6FF" stroke-width="2"/>
+  <rect x="24" y="22" width="86" height="26" rx="13" fill="#F4EEFF"/>
+  <text class="mono" x="40" y="40" font-size="12" font-weight="700" fill="#7B68C8" letter-spacing="1">stack.map</text>
+    <text class="mono" x="48" y="87" font-size="12.5" font-weight="700" fill="#7B68C8" letter-spacing="1">data.cloud</text>
+  <g class="rise" style="animation-delay:0.00s"><rect x="168.0" y="66" width="88.4" height="32" rx="16" fill="#F1EBFF" stroke="#CDBDFB"/><text class="sans" x="212.2" y="87" font-size="12.5" font-weight="600" fill="#4F3FA0" text-anchor="middle">BigQuery</text></g>
+  <g class="rise" style="animation-delay:0.04s"><rect x="266.4" y="66" width="95.7" height="32" rx="16" fill="#F1EBFF" stroke="#CDBDFB"/><text class="sans" x="314.2" y="87" font-size="12.5" font-weight="600" fill="#4F3FA0" text-anchor="middle">GA4 · GTM</text></g>
+  <g class="rise" style="animation-delay:0.08s"><rect x="372.1" y="66" width="51.9" height="32" rx="16" fill="#F1EBFF" stroke="#CDBDFB"/><text class="sans" x="398.0" y="87" font-size="12.5" font-weight="600" fill="#4F3FA0" text-anchor="middle">SQL</text></g>
+  <g class="rise" style="animation-delay:0.12s"><rect x="434.0" y="66" width="51.9" height="32" rx="16" fill="#F1EBFF" stroke="#CDBDFB"/><text class="sans" x="459.9" y="87" font-size="12.5" font-weight="600" fill="#4F3FA0" text-anchor="middle">GCP</text></g>
+  <g class="rise" style="animation-delay:0.16s"><rect x="495.9" y="66" width="124.9" height="32" rx="16" fill="#F1EBFF" stroke="#CDBDFB"/><text class="sans" x="558.3" y="87" font-size="12.5" font-weight="600" fill="#4F3FA0" text-anchor="middle">Azure Synapse</text></g>
+  <g class="rise" style="animation-delay:0.20s"><rect x="630.8" y="66" width="103.0" height="32" rx="16" fill="#F1EBFF" stroke="#CDBDFB"/><text class="sans" x="682.3" y="87" font-size="12.5" font-weight="600" fill="#4F3FA0" text-anchor="middle">Databricks</text></g>
+  <g class="rise" style="animation-delay:0.24s"><rect x="743.8" y="66" width="66.5" height="32" rx="16" fill="#F1EBFF" stroke="#CDBDFB"/><text class="sans" x="777.0" y="87" font-size="12.5" font-weight="600" fill="#4F3FA0" text-anchor="middle">Spark</text></g>
+  <g class="rise" style="animation-delay:0.28s"><rect x="820.3" y="66" width="51.9" height="32" rx="16" fill="#F1EBFF" stroke="#CDBDFB"/><text class="sans" x="846.2" y="87" font-size="12.5" font-weight="600" fill="#4F3FA0" text-anchor="middle">dbt</text></g>
+  <g class="rise" style="animation-delay:0.32s"><rect x="168.0" y="108" width="103.0" height="32" rx="16" fill="#F1EBFF" stroke="#CDBDFB"/><text class="sans" x="219.5" y="129" font-size="12.5" font-weight="600" fill="#4F3FA0" text-anchor="middle">PostgreSQL</text></g>
+  <line x1="48" y1="150" x2="952" y2="150" stroke="#F1ECFF"/>
+  <text class="mono" x="48" y="183" font-size="12.5" font-weight="700" fill="#C45A88" letter-spacing="1">ai.ml</text>
+  <g class="rise" style="animation-delay:0.36s"><rect x="168.0" y="162" width="73.8" height="32" rx="16" fill="#FFEAF2" stroke="#FFBFD8"/><text class="sans" x="204.9" y="183" font-size="12.5" font-weight="600" fill="#A8426F" text-anchor="middle">Python</text></g>
+  <g class="rise" style="animation-delay:0.40s"><rect x="251.8" y="162" width="95.7" height="32" rx="16" fill="#FFEAF2" stroke="#FFBFD8"/><text class="sans" x="299.7" y="183" font-size="12.5" font-weight="600" fill="#A8426F" text-anchor="middle">LangChain</text></g>
+  <g class="rise" style="animation-delay:0.44s"><rect x="357.5" y="162" width="88.4" height="32" rx="16" fill="#FFEAF2" stroke="#FFBFD8"/><text class="sans" x="401.7" y="183" font-size="12.5" font-weight="600" fill="#A8426F" text-anchor="middle">ChromaDB</text></g>
+  <g class="rise" style="animation-delay:0.48s"><rect x="455.9" y="162" width="110.3" height="32" rx="16" fill="#FFEAF2" stroke="#FFBFD8"/><text class="sans" x="511.0" y="183" font-size="12.5" font-weight="600" fill="#A8426F" text-anchor="middle">RAG · RAGAS</text></g>
+  <g class="rise" style="animation-delay:0.52s"><rect x="576.2" y="162" width="81.1" height="32" rx="16" fill="#FFEAF2" stroke="#FFBFD8"/><text class="sans" x="616.7" y="183" font-size="12.5" font-weight="600" fill="#A8426F" text-anchor="middle">PyTorch</text></g>
+  <g class="rise" style="animation-delay:0.56s"><rect x="667.3" y="162" width="139.5" height="32" rx="16" fill="#FFEAF2" stroke="#FFBFD8"/><text class="sans" x="737.0" y="183" font-size="12.5" font-weight="600" fill="#A8426F" text-anchor="middle">LLM fine-tuning</text></g>
+  <g class="rise" style="animation-delay:0.60s"><rect x="816.8" y="162" width="95.7" height="32" rx="16" fill="#FFEAF2" stroke="#FFBFD8"/><text class="sans" x="864.6" y="183" font-size="12.5" font-weight="600" fill="#A8426F" text-anchor="middle">Streamlit</text></g>
+  <line x1="48" y1="204" x2="952" y2="204" stroke="#F1ECFF"/>
+  <text class="mono" x="48" y="237" font-size="12.5" font-weight="700" fill="#4B8DBD" letter-spacing="1">bi.viz</text>
+  <g class="rise" style="animation-delay:0.64s"><rect x="168.0" y="216" width="124.9" height="32" rx="16" fill="#E8F5FE" stroke="#B5DBF5"/><text class="sans" x="230.4" y="237" font-size="12.5" font-weight="600" fill="#2A6A9B" text-anchor="middle">Looker Studio</text></g>
+  <g class="rise" style="animation-delay:0.68s"><rect x="302.9" y="216" width="88.4" height="32" rx="16" fill="#E8F5FE" stroke="#B5DBF5"/><text class="sans" x="347.1" y="237" font-size="12.5" font-weight="600" fill="#2A6A9B" text-anchor="middle">Power BI</text></g>
+  <g class="rise" style="animation-delay:0.72s"><rect x="401.3" y="216" width="139.5" height="32" rx="16" fill="#E8F5FE" stroke="#B5DBF5"/><text class="sans" x="471.0" y="237" font-size="12.5" font-weight="600" fill="#2A6A9B" text-anchor="middle">Apache Superset</text></g>
+  <g class="rise" style="animation-delay:0.76s"><rect x="550.8" y="216" width="81.1" height="32" rx="16" fill="#E8F5FE" stroke="#B5DBF5"/><text class="sans" x="591.3" y="237" font-size="12.5" font-weight="600" fill="#2A6A9B" text-anchor="middle">Tableau</text></g>
+  <line x1="48" y1="258" x2="952" y2="258" stroke="#F1ECFF"/>
+  <text class="mono" x="48" y="291" font-size="12.5" font-weight="700" fill="#4BA67C" letter-spacing="1">tooling</text>
+  <g class="rise" style="animation-delay:0.80s"><rect x="168.0" y="270" width="73.8" height="32" rx="16" fill="#E6F7EE" stroke="#B0E3CA"/><text class="sans" x="204.9" y="291" font-size="12.5" font-weight="600" fill="#2A7352" text-anchor="middle">Docker</text></g>
+  <g class="rise" style="animation-delay:0.84s"><rect x="251.8" y="270" width="51.9" height="32" rx="16" fill="#E6F7EE" stroke="#B0E3CA"/><text class="sans" x="277.8" y="291" font-size="12.5" font-weight="600" fill="#2A7352" text-anchor="middle">Git</text></g>
+  <g class="rise" style="animation-delay:0.88s"><rect x="313.7" y="270" width="81.1" height="32" rx="16" fill="#E6F7EE" stroke="#B0E3CA"/><text class="sans" x="354.2" y="291" font-size="12.5" font-weight="600" fill="#2A7352" text-anchor="middle">Jenkins</text></g>
+  <g class="rise" style="animation-delay:0.92s"><rect x="404.8" y="270" width="117.6" height="32" rx="16" fill="#E6F7EE" stroke="#B0E3CA"/><text class="sans" x="463.6" y="291" font-size="12.5" font-weight="600" fill="#2A7352" text-anchor="middle">Jira · Scrum</text></g>
+  <line x1="48" y1="312" x2="952" y2="312" stroke="#F1ECFF"/>
+</svg>

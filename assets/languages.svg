@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="218" viewBox="0 0 1000 218" role="img" aria-label="Language spread">
+  <defs>
+    <clipPath id="bar"><rect x="24" y="64" width="952" height="20" rx="10"/></clipPath>
+    <clipPath id="reveal"><rect class="wipe" x="24" y="60" width="952" height="28"/></clipPath>
+    <style>
+      .sans { font-family: 'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+      .rise { animation: rise .8s ease-out both; }
+      @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+
+      .wipe { transform-box: fill-box; transform-origin: left; animation: wipe 1.6s cubic-bezier(.2,.8,.2,1) both; }
+      @keyframes wipe { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    </style>
+  </defs>
+  <rect x="1" y="1" width="998" height="216" rx="28" fill="#FFFFFF" stroke="#EDE6FF" stroke-width="2"/>
+  <rect x="24" y="20" width="168" height="26" rx="13" fill="#FFEAF2"/>
+  <text class="mono" x="40" y="38" font-size="12" font-weight="700" fill="#A8426F" letter-spacing="1">language.spread</text>
+  <text class="mono" x="976" y="38" font-size="11" fill="#A39CBB" text-anchor="end">owned public repos</text>
+  <rect x="24" y="64" width="952" height="20" rx="10" fill="#F4EEFF"/>
+  <g clip-path="url(#bar)"><g clip-path="url(#reveal)"><rect x="24.0" y="64" width="750.1" height="20" fill="#B9A6F5"/><rect x="774.1" y="64" width="64.9" height="20" fill="#FFB8D6"/><rect x="839.0" y="64" width="64.9" height="20" fill="#9FD3F5"/><rect x="903.9" y="64" width="36.1" height="20" fill="#9ADBBB"/><rect x="939.9" y="64" width="21.6" height="20" fill="#FFCBA4"/><rect x="961.6" y="64" width="14.4" height="20" fill="#E3C8F7"/></g></g>
+  
+  <g class="rise" style="animation-delay:0.00s">
+    <circle cx="32" cy="113" r="6" fill="#B9A6F5"/>
+    <text class="sans" x="50" y="118" font-size="15" font-weight="600" fill="#3B3552">Python</text>
+    <text class="mono" x="464" y="118" font-size="13" fill="#7A7394" text-anchor="end">78.8%</text>
+  </g>
+  <g class="rise" style="animation-delay:0.08s">
+    <circle cx="512" cy="113" r="6" fill="#FFB8D6"/>
+    <text class="sans" x="530" y="118" font-size="15" font-weight="600" fill="#3B3552">Jupyter Notebook</text>
+    <text class="mono" x="944" y="118" font-size="13" fill="#7A7394" text-anchor="end">6.8%</text>
+  </g>
+  <g class="rise" style="animation-delay:0.16s">
+    <circle cx="32" cy="147" r="6" fill="#9FD3F5"/>
+    <text class="sans" x="50" y="152" font-size="15" font-weight="600" fill="#3B3552">SQL</text>
+    <text class="mono" x="464" y="152" font-size="13" fill="#7A7394" text-anchor="end">6.8%</text>
+  </g>
+  <g class="rise" style="animation-delay:0.24s">
+    <circle cx="512" cy="147" r="6" fill="#9ADBBB"/>
+    <text class="sans" x="530" y="152" font-size="15" font-weight="600" fill="#3B3552">HTML</text>
+    <text class="mono" x="944" y="152" font-size="13" fill="#7A7394" text-anchor="end">3.8%</text>
+  </g>
+  <g class="rise" style="animation-delay:0.32s">
+    <circle cx="32" cy="181" r="6" fill="#FFCBA4"/>
+    <text class="sans" x="50" y="186" font-size="15" font-weight="600" fill="#3B3552">Shell</text>
+    <text class="mono" x="464" y="186" font-size="13" fill="#7A7394" text-anchor="end">2.3%</text>
+  </g>
+  <g class="rise" style="animation-delay:0.40s">
+    <circle cx="512" cy="181" r="6" fill="#E3C8F7"/>
+    <text class="sans" x="530" y="186" font-size="15" font-weight="600" fill="#3B3552">Dockerfile</text>
+    <text class="mono" x="944" y="186" font-size="13" fill="#7A7394" text-anchor="end">1.5%</text>
+  </g>
+</svg>
