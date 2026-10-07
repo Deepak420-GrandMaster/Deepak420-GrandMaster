@@ -60,8 +60,8 @@
       <circle cx="66" cy="306" r="2.3" fill="#8C6B47"/><circle cx="82" cy="306" r="2.3" fill="#8C6B47"/>
       <circle cx="66" cy="318" r="2.3" fill="#8C6B47"/><circle cx="82" cy="318" r="2.3" fill="#8C6B47"/>
       <path d="M66 306L74 312L82 306M66 318L74 312L82 318" stroke="#8C6B47" stroke-width="1.2" fill="none"/>
-      <text x="104" y="308" font-size="16" font-weight="600" fill="#1D1B18">Agentic AI</text>
-      <text x="104" y="328" font-size="13.5" fill="#6E675D">RAG assistants and planning agents grounded in real data</text>
+      <text x="104" y="308" font-size="16" font-weight="600" fill="#1D1B18">AI agents</text>
+      <text x="104" y="328" font-size="13.5" fill="#6E675D">Creating agents, RAG assistants and planners grounded in real data</text>
     </g>
     </g>
   </g>
