@@ -70,14 +70,13 @@
   <g filter="url(#shadow)"><rect x="624" y="24" width="352" height="196" rx="26" fill="#2B2620"/></g>
   <g class="sf">
     <text class="eyebrow" x="650" y="58" fill="#C9A97C">NOW BUILDING</text>
-    <text x="650" y="96" font-size="23" font-weight="700" fill="#F5EFE4" letter-spacing="-0.5">Agentic RAG</text>
-    <text x="650" y="123" font-size="23" font-weight="700" fill="#F5EFE4" letter-spacing="-0.5">Travel Assistant</text>
-    <text x="650" y="148" font-size="13" fill="#A89F90">Retrieval and evaluation harness, live demo</text>
+    <text x="650" y="98" font-size="28" font-weight="700" fill="#F5EFE4" letter-spacing="-0.7">Second Brain</text>
+    <text x="650" y="122" font-size="13" fill="#A89F90">A personal data system for reflection and analysis</text>
 
-    <text x="650" y="182" font-size="12.5" font-weight="500" fill="#A89F90">Faithfulness</text>
-    <text x="950" y="182" font-size="12.5" font-weight="700" fill="#EBD9B8" text-anchor="end">0.60 → 0.92</text>
-    <rect x="650" y="192" width="300" height="8" rx="4" fill="#4A4238"/>
-    <rect class="fill" x="650" y="192" width="276" height="8" rx="4" fill="url(#prog)"/>
+    <line x1="650" y1="142" x2="950" y2="142" stroke="#4A4238"/>
+
+    <text class="eyebrow" x="650" y="170" fill="#C9A97C">RECENTLY BUILT</text>
+    <text x="650" y="198" font-size="20" font-weight="700" fill="#F5EFE4" letter-spacing="-0.4">Admin Trace</text>
   </g>
 
   <!-- RIGHT BOTTOM -->

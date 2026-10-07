@@ -17,30 +17,30 @@
   <text class="sf eyebrow" x="30" y="44" fill="#9C7A54">LANGUAGES</text>
   <text class="sf" x="970" y="44" font-size="12" fill="#A39B8E" text-anchor="end">Owned public repos, notebooks excluded</text>
   <rect x="30" y="68" width="940" height="20" rx="10" fill="#F5EFE4"/>
-  <g clip-path="url(#bar)"><g clip-path="url(#reveal)"><rect x="30.0" y="68" width="501.8" height="20" fill="#6F5638"/><rect x="531.3" y="68" width="376.5" height="20" fill="#9C7A54"/><rect x="907.3" y="68" width="31.8" height="20" fill="#BE9E78"/><rect x="938.7" y="68" width="16.2" height="20" fill="#D5BE9C"/><rect x="954.3" y="68" width="16.2" height="20" fill="#E3D3B9"/></g></g>
+  <g clip-path="url(#bar)"><g clip-path="url(#reveal)"><rect x="30.0" y="68" width="501.8" height="20" fill="#C8643C"/><rect x="531.3" y="68" width="376.5" height="20" fill="#4F7CAC"/><rect x="907.3" y="68" width="31.8" height="20" fill="#6FA37A"/><rect x="938.7" y="68" width="16.2" height="20" fill="#D9A441"/><rect x="954.3" y="68" width="16.2" height="20" fill="#8E6C8A"/></g></g>
   
   <g class="rise" style="animation-delay:0.00s">
-    <circle cx="37" cy="121" r="6" fill="#6F5638"/>
+    <circle cx="37" cy="121" r="6" fill="#C8643C"/>
     <text class="sf" x="54" y="126" font-size="15" font-weight="500" fill="#1D1B18">HTML</text>
     <text class="sf" x="460" y="126" font-size="14" fill="#6E675D" text-anchor="end">53.3%</text>
   </g>
   <g class="rise" style="animation-delay:0.08s">
-    <circle cx="517" cy="121" r="6" fill="#9C7A54"/>
+    <circle cx="517" cy="121" r="6" fill="#4F7CAC"/>
     <text class="sf" x="534" y="126" font-size="15" font-weight="500" fill="#1D1B18">Python</text>
     <text class="sf" x="940" y="126" font-size="14" fill="#6E675D" text-anchor="end">40.0%</text>
   </g>
   <g class="rise" style="animation-delay:0.16s">
-    <circle cx="37" cy="157" r="6" fill="#BE9E78"/>
+    <circle cx="37" cy="157" r="6" fill="#6FA37A"/>
     <text class="sf" x="54" y="162" font-size="15" font-weight="500" fill="#1D1B18">CSS</text>
     <text class="sf" x="460" y="162" font-size="14" fill="#6E675D" text-anchor="end">3.3%</text>
   </g>
   <g class="rise" style="animation-delay:0.24s">
-    <circle cx="517" cy="157" r="6" fill="#D5BE9C"/>
+    <circle cx="517" cy="157" r="6" fill="#D9A441"/>
     <text class="sf" x="534" y="162" font-size="15" font-weight="500" fill="#1D1B18">SCSS</text>
     <text class="sf" x="940" y="162" font-size="14" fill="#6E675D" text-anchor="end">1.7%</text>
   </g>
   <g class="rise" style="animation-delay:0.32s">
-    <circle cx="37" cy="193" r="6" fill="#E3D3B9"/>
+    <circle cx="37" cy="193" r="6" fill="#8E6C8A"/>
     <text class="sf" x="54" y="198" font-size="15" font-weight="500" fill="#1D1B18">Shell</text>
     <text class="sf" x="460" y="198" font-size="14" fill="#6E675D" text-anchor="end">1.7%</text>
   </g>

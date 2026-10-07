@@ -81,12 +81,4 @@
     <rect x="792" y="210" width="132" height="24" rx="12" fill="#F3ECDF"/>
     <text x="858" y="226" font-size="11.5" font-weight="600" fill="#6E675D" text-anchor="middle">GA4 → Looker Studio</text>
   </g>
-
-  <!-- floating chip -->
-  <g filter="url(#shadow)">
-    <rect x="520" y="254" width="172" height="34" rx="17" fill="#FFFDF9" stroke="#EADFCF"/>
-  </g>
-  <circle cx="540" cy="271" r="9" fill="#EFE6D6"/>
-  <text class="sf" x="540" y="274.5" font-size="9.5" font-weight="700" fill="#7A5C3A" text-anchor="middle">AI</text>
-  <text class="mono" x="558" y="275" font-size="11.5" fill="#6E675D">agent.plan_trip()</text>
 </svg>

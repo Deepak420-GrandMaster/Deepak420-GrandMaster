@@ -47,9 +47,9 @@ query($login: String!) {
 }
 """
 
-# Warm beige palette. Language shades run dark -> light.
+# Warm beige palette. Language colours are muted but clearly distinct from each other.
 SANS = "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif"
-PALETTE = ["#6F5638", "#9C7A54", "#BE9E78", "#D5BE9C", "#E3D3B9", "#EDE2CE"]
+PALETTE = ["#C8643C", "#4F7CAC", "#6FA37A", "#D9A441", "#8E6C8A", "#8C6B47"]
 CARD, FRAME, TILE = "#FFFDF9", "#E4D9C6", "#F5EFE4"
 INK, INK2, MUTED, FAINT, BRONZE = "#1D1B18", "#4A4339", "#6E675D", "#A39B8E", "#9C7A54"
 
