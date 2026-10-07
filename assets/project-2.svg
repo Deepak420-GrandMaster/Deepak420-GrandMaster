@@ -1,30 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="310" height="236" viewBox="0 0 310 236" role="img" aria-label="Agentic-AI">
+<svg xmlns="http://www.w3.org/2000/svg" width="310" height="250" viewBox="0 0 310 250" role="img" aria-label="Agentic-AI">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#F1EBFF"/><stop offset="1" stop-color="#FFFFFF"/>
-    </linearGradient>
     <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#8B7BC8" flood-opacity="0.16"/>
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#6B5434" flood-opacity="0.10"/>
     </filter>
     <style>
-      .sans { font-family: 'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif; }
-      .mono { font-family: 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
-      .rise { animation: rise .8s ease-out both; }
-      @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      .sf { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 1.6px; }
+      .rise { animation: rise .8s cubic-bezier(.2,.8,.2,1) both; }
+      @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
       @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
 
-      .card { animation: rise .8s ease-out both; }
-      .dot { animation: bob 3.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-      @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+      .card { animation: rise .8s cubic-bezier(.2,.8,.2,1) both; }
     </style>
   </defs>
   <g class="card" filter="url(#s)">
-    <rect x="6" y="4" width="298" height="224" rx="20" fill="url(#g)" stroke="#CDBDFB"/>
+    <rect x="6" y="4" width="298" height="236" rx="22" fill="#FFFDF9" stroke="#E4D9C6"/>
   </g>
-  <circle class="dot" cx="46" cy="44" r="15" fill="#CDBDFB" fill-opacity="0.55"/>
-  <path d="M40 40l-5 4 5 4M52 40l5 4-5 4" fill="none" stroke="#4F3FA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text class="mono" x="70" y="49" font-size="14.5" font-weight="700" fill="#3B3552">Agentic-AI</text>
-  <text class="sans" x="26" y="94" font-size="13" fill="#6F6888">Multi-agent AI workflows and reusable</text><text class="sans" x="26" y="113" font-size="13" fill="#6F6888">tooling patterns.</text>
+  <circle cx="46" cy="48" r="16" fill="#F3ECDF"/>
+  <path d="M40 44l-5 4 5 4M52 44l5 4-5 4" fill="none" stroke="#9C7A54" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="sf" x="72" y="53" font-size="15" font-weight="700" fill="#1D1B18" letter-spacing="-0.2">Agentic-AI</text>
+  <path d="M270 50l10 -10m0 0h-7m7 0v7" fill="none" stroke="#A39B8E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="sf" x="28" y="98" font-size="13.5" fill="#6E675D">Multi-agent AI workflows and reusable</text><text class="sf" x="28" y="118" font-size="13.5" fill="#6E675D">tooling patterns.</text>
   
-  <rect x="26.0" y="184" width="61.6" height="24" rx="12" fill="#F1EBFF" stroke="#CDBDFB"/><text class="mono" x="56.8" y="200" font-size="11" font-weight="600" fill="#4F3FA0" text-anchor="middle">Agents</text><rect x="95.6" y="184" width="68.2" height="24" rx="12" fill="#F1EBFF" stroke="#CDBDFB"/><text class="mono" x="129.7" y="200" font-size="11" font-weight="600" fill="#4F3FA0" text-anchor="middle">Tooling</text>
+  <rect x="28.0" y="196" width="65.4" height="26" rx="13" fill="#F5EFE4" stroke="#E6DCCB"/><text class="sf" x="60.7" y="213" font-size="11.5" font-weight="500" fill="#4A4339" text-anchor="middle">Agents</text><rect x="101.4" y="196" width="72.3" height="26" rx="13" fill="#F5EFE4" stroke="#E6DCCB"/><text class="sf" x="137.6" y="213" font-size="11.5" font-weight="500" fill="#4A4339" text-anchor="middle">Tooling</text>
 </svg>

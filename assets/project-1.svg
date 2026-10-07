@@ -1,30 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="310" height="236" viewBox="0 0 310 236" role="img" aria-label="Airbnb-agentic-rag">
+<svg xmlns="http://www.w3.org/2000/svg" width="310" height="250" viewBox="0 0 310 250" role="img" aria-label="Airbnb-agentic-rag">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FFEAF2"/><stop offset="1" stop-color="#FFFFFF"/>
-    </linearGradient>
     <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#8B7BC8" flood-opacity="0.16"/>
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#6B5434" flood-opacity="0.10"/>
     </filter>
     <style>
-      .sans { font-family: 'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif; }
-      .mono { font-family: 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
-      .rise { animation: rise .8s ease-out both; }
-      @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      .sf { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 1.6px; }
+      .rise { animation: rise .8s cubic-bezier(.2,.8,.2,1) both; }
+      @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
       @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
 
-      .card { animation: rise .8s ease-out both; }
-      .dot { animation: bob 3.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-      @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+      .card { animation: rise .8s cubic-bezier(.2,.8,.2,1) both; }
     </style>
   </defs>
   <g class="card" filter="url(#s)">
-    <rect x="6" y="4" width="298" height="224" rx="20" fill="url(#g)" stroke="#FFBFD8"/>
+    <rect x="6" y="4" width="298" height="236" rx="22" fill="#FFFDF9" stroke="#E4D9C6"/>
   </g>
-  <circle class="dot" cx="46" cy="44" r="15" fill="#FFBFD8" fill-opacity="0.55"/>
-  <path d="M40 40l-5 4 5 4M52 40l5 4-5 4" fill="none" stroke="#A8426F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text class="mono" x="70" y="49" font-size="14.5" font-weight="700" fill="#3B3552">Airbnb-agentic-rag</text>
-  <text class="sans" x="26" y="94" font-size="13" fill="#6F6888">Agentic RAG travel assistant over</text><text class="sans" x="26" y="113" font-size="13" fill="#6F6888">Airbnb data: retrieval plus an</text><text class="sans" x="26" y="132" font-size="13" fill="#6F6888">evaluation harness, with a live demo.</text>
-  <rect x="26" y="144" width="182.8" height="22" rx="11" fill="#FFFFFF" stroke="#FFBFD8"/><text class="mono" x="117.4" y="159" font-size="11" font-weight="700" fill="#A8426F" text-anchor="middle">faithfulness 0.60 → 0.92</text>
-  <rect x="26.0" y="184" width="61.6" height="24" rx="12" fill="#FFEAF2" stroke="#FFBFD8"/><text class="mono" x="56.8" y="200" font-size="11" font-weight="600" fill="#A8426F" text-anchor="middle">Python</text><rect x="95.6" y="184" width="41.8" height="24" rx="12" fill="#FFEAF2" stroke="#FFBFD8"/><text class="mono" x="116.5" y="200" font-size="11" font-weight="600" fill="#A8426F" text-anchor="middle">RAG</text><rect x="145.4" y="184" width="55.0" height="24" rx="12" fill="#FFEAF2" stroke="#FFBFD8"/><text class="mono" x="172.9" y="200" font-size="11" font-weight="600" fill="#A8426F" text-anchor="middle">RAGAS</text>
+  <circle cx="46" cy="48" r="16" fill="#F3ECDF"/>
+  <path d="M40 44l-5 4 5 4M52 44l5 4-5 4" fill="none" stroke="#9C7A54" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="sf" x="72" y="53" font-size="15" font-weight="700" fill="#1D1B18" letter-spacing="-0.2">Airbnb-agentic-rag</text>
+  <path d="M270 50l10 -10m0 0h-7m7 0v7" fill="none" stroke="#A39B8E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="sf" x="28" y="98" font-size="13.5" fill="#6E675D">Agentic RAG travel assistant over</text><text class="sf" x="28" y="118" font-size="13.5" fill="#6E675D">Airbnb data: retrieval plus an</text><text class="sf" x="28" y="138" font-size="13.5" fill="#6E675D">evaluation harness, with a live demo.</text>
+  <rect x="28" y="154" width="182.4" height="24" rx="12" fill="#F3ECDF"/><text class="sf" x="119.2" y="170" font-size="11.5" font-weight="700" fill="#7A5C3A" text-anchor="middle">Faithfulness 0.60 → 0.92</text>
+  <rect x="28.0" y="196" width="65.4" height="26" rx="13" fill="#F5EFE4" stroke="#E6DCCB"/><text class="sf" x="60.7" y="213" font-size="11.5" font-weight="500" fill="#4A4339" text-anchor="middle">Python</text><rect x="101.4" y="196" width="44.7" height="26" rx="13" fill="#F5EFE4" stroke="#E6DCCB"/><text class="sf" x="123.8" y="213" font-size="11.5" font-weight="500" fill="#4A4339" text-anchor="middle">RAG</text><rect x="154.1" y="196" width="58.5" height="26" rx="13" fill="#F5EFE4" stroke="#E6DCCB"/><text class="sf" x="183.4" y="213" font-size="11.5" font-weight="500" fill="#4A4339" text-anchor="middle">RAGAS</text>
 </svg>

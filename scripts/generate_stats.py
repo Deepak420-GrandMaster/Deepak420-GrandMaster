@@ -47,60 +47,18 @@ query($login: String!) {
 }
 """
 
-# pastel palette used for language ranks (and tiles)
-PALETTE = ["#B9A6F5", "#FFB8D6", "#9FD3F5", "#9ADBBB", "#FFCBA4", "#E3C8F7", "#CFCFE8"]
-TILES = [
-    ("#B9A6F5", "#F4EEFF", "#4F3FA0"),
-    ("#FFB8D6", "#FFEAF2", "#A8426F"),
-    ("#9FD3F5", "#E8F5FE", "#2A6A9B"),
-    ("#9ADBBB", "#E6F7EE", "#2A7352"),
-]
+# Warm beige palette. Language shades run dark -> light.
+SANS = "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+PALETTE = ["#6F5638", "#9C7A54", "#BE9E78", "#D5BE9C", "#E3D3B9", "#EDE2CE"]
+CARD, FRAME, TILE = "#FFFDF9", "#E4D9C6", "#F5EFE4"
+INK, INK2, MUTED, FAINT, BRONZE = "#1D1B18", "#4A4339", "#6E675D", "#A39B8E", "#9C7A54"
+
+# Notebook files are huge in bytes and swamp the real languages, so they are left out.
+EXCLUDE_LANGUAGES = {"Jupyter Notebook"}
 
 
 def esc(s):
     return html.escape(str(s), quote=True)
-
-
-def fetch(login, token):
-    req = urllib.request.Request(
-        "https://api.github.com/graphql",
-        data=json.dumps({"query": QUERY, "variables": {"login": login}}).encode(),
-        headers={"Authorization": f"bearer {token}", "Content-Type": "application/json",
-                 "User-Agent": "pastel-profile-stats"},
-    )
-    with urllib.request.urlopen(req, timeout=30) as r:
-        payload = json.load(r)
-    if "errors" in payload:
-        raise SystemExit(f"GitHub API error: {payload['errors']}")
-    return payload["data"]["user"]
-
-
-def demo_user():
-    import random
-    random.seed(7)
-    today = dt.date.today()
-    days = []
-    for i in range(365, -1, -1):
-        d = today - dt.timedelta(days=i)
-        n = 0 if random.random() < 0.55 else random.randint(1, 9)
-        if i < 9:
-            n = max(n, 1)
-        days.append({"date": d.isoformat(), "contributionCount": n})
-    weeks = [{"contributionDays": days}]
-    return {
-        "followers": {"totalCount": 3}, "following": {"totalCount": 17},
-        "allPublic": {"totalCount": 18},
-        "repositories": {"nodes": [
-            {"stargazerCount": 1, "languages": {"edges": [
-                {"size": 78000, "node": {"name": "Python"}}, {"size": 9000, "node": {"name": "Jupyter Notebook"}},
-                {"size": 3000, "node": {"name": "Shell"}}]}},
-            {"stargazerCount": 1, "languages": {"edges": [
-                {"size": 26000, "node": {"name": "Python"}}, {"size": 9000, "node": {"name": "SQL"}},
-                {"size": 5000, "node": {"name": "HTML"}}, {"size": 2000, "node": {"name": "Dockerfile"}}]}},
-        ]},
-        "contributionsCollection": {"contributionCalendar": {
-            "totalContributions": sum(d["contributionCount"] for d in days), "weeks": weeks}},
-    }
 
 
 def streaks(days):
@@ -121,10 +79,10 @@ def streaks(days):
 
 
 SHARED = f"""
-      .sans {{ font-family: {FONT_SANS}; }}
-      .mono {{ font-family: {FONT_MONO}; }}
-      .rise {{ animation: rise .8s ease-out both; }}
-      @keyframes rise {{ from {{ opacity: 0; transform: translateY(10px); }} to {{ opacity: 1; transform: translateY(0); }} }}
+      .sf {{ font-family: {SANS}; }}
+      .eyebrow {{ font-size: 12px; font-weight: 600; letter-spacing: 1.6px; }}
+      .rise {{ animation: rise .8s cubic-bezier(.2,.8,.2,1) both; }}
+      @keyframes rise {{ from {{ opacity: 0; transform: translateY(8px); }} to {{ opacity: 1; transform: translateY(0); }} }}
       @media (prefers-reduced-motion: reduce) {{ * {{ animation: none !important; }} }}
 """
 
@@ -136,44 +94,47 @@ def render_stats(u):
     cur, best = streaks(days)
     stars = sum(r["stargazerCount"] for r in u["repositories"]["nodes"])
     tiles = [
-        (f'{cal["totalContributions"]:,}', "contributions", "last 12 months"),
-        (f"{active}", "active days", "days with a commit"),
-        (f"{cur}", "current streak", "consecutive days"),
-        (f"{best}", "best streak", "longest run"),
+        (f'{cal["totalContributions"]:,}', "Contributions", "Last 12 months"),
+        (f"{active}", "Active days", "Days with a commit"),
+        (f"{cur}", "Current streak", "Consecutive days"),
+        (f"{best}", "Best streak", "Longest run"),
     ]
     chips = [
-        f'public repos {u["allPublic"]["totalCount"]}',
-        f"stars {stars}",
-        f'followers {u["followers"]["totalCount"]}',
-        f'following {u["following"]["totalCount"]}',
+        f'{u["allPublic"]["totalCount"]} public repos',
+        f"{stars} stars",
+        f'{u["followers"]["totalCount"]} followers',
+        f'{u["following"]["totalCount"]} following',
     ]
-    w, h = 1000, 232
+    w, h = 1000, 236
     tw, gap = 226, 16
     parts = []
-    for i, ((big, label, sub), (accent, bg, ink)) in enumerate(zip(tiles, TILES)):
-        x = 24 + i * (tw + gap)
+    for i, (big, label, sub) in enumerate(tiles):
+        x = 28 + i * (tw + gap - 3.5)
+        dark = i == 0
+        bg = "#2B2620" if dark else TILE
+        num = "#F5EFE4" if dark else INK
+        lab = "#EBD9B8" if dark else INK2
+        subc = "#A89F90" if dark else FAINT
         parts.append(f"""
-  <g class="rise" style="animation-delay:{i * 0.12:.2f}s">
-    <rect x="{x}" y="62" width="{tw}" height="104" rx="18" fill="{bg}"/>
-    <rect x="{x + 18}" y="62" width="46" height="5" rx="2.5" fill="{accent}"/>
-    <text class="sans" x="{x + 18}" y="112" font-size="40" font-weight="800" fill="#3B3552">{esc(big)}</text>
-    <text class="sans" x="{x + 18}" y="136" font-size="13.5" font-weight="700" fill="{ink}">{esc(label)}</text>
-    <text class="mono" x="{x + 18}" y="154" font-size="10.5" fill="#8D86A6">{esc(sub)}</text>
+  <g class="rise" style="animation-delay:{i * 0.1:.2f}s">
+    <rect x="{x:.1f}" y="66" width="{tw - 4}" height="106" rx="22" fill="{bg}"/>
+    <text class="sf" x="{x + 22:.1f}" y="118" font-size="42" font-weight="700" fill="{num}" letter-spacing="-1.2">{esc(big)}</text>
+    <text class="sf" x="{x + 22:.1f}" y="142" font-size="14" font-weight="600" fill="{lab}">{esc(label)}</text>
+    <text class="sf" x="{x + 22:.1f}" y="159" font-size="12" fill="{subc}">{esc(sub)}</text>
   </g>""")
-    cx = 24
+    cx = 28
     for c in chips:
-        cw = len(c) * 7 + 28
+        cw = len(c) * 7.2 + 30
         parts.append(
-            f'<rect x="{cx}" y="184" width="{cw:.0f}" height="28" rx="14" fill="#FFFFFF" stroke="#E4DAFF"/>'
-            f'<text class="mono" x="{cx + cw / 2:.0f}" y="202" font-size="11.5" fill="#6B5FA8" text-anchor="middle">{esc(c)}</text>'
+            f'<rect x="{cx:.0f}" y="190" width="{cw:.0f}" height="28" rx="14" fill="{CARD}" stroke="#E6DCCB"/>'
+            f'<text class="sf" x="{cx + cw / 2:.0f}" y="208" font-size="12.5" font-weight="500" fill="{MUTED}" text-anchor="middle">{esc(c)}</text>'
         )
         cx += cw + 10
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="GitHub activity">
   <defs><style>{SHARED}</style></defs>
-  <rect x="1" y="1" width="{w - 2}" height="{h - 2}" rx="28" fill="#FFFFFF" stroke="#EDE6FF" stroke-width="2"/>
-  <rect x="24" y="20" width="148" height="26" rx="13" fill="#F4EEFF"/>
-  <text class="mono" x="40" y="38" font-size="12" font-weight="700" fill="#7B68C8" letter-spacing="1">github.activity</text>
-  <text class="mono" x="{w - 24}" y="38" font-size="11" fill="#A39CBB" text-anchor="end">updated {dt.date.today().isoformat()}</text>
+  <rect x="0.75" y="0.75" width="{w - 1.5}" height="{h - 1.5}" rx="31.5" fill="{CARD}" stroke="{FRAME}" stroke-width="1.5"/>
+  <text class="sf eyebrow" x="30" y="44" fill="{BRONZE}">GITHUB ACTIVITY</text>
+  <text class="sf" x="{w - 30}" y="44" font-size="12" fill="{FAINT}" text-anchor="end">Updated {dt.date.today().isoformat()}</text>
   {"".join(parts)}
 </svg>
 """
@@ -184,43 +145,44 @@ def render_languages(u):
     totals = defaultdict(int)
     for r in u["repositories"]["nodes"]:
         for e in r["languages"]["edges"]:
+            if e["node"]["name"] in EXCLUDE_LANGUAGES:
+                continue
             totals[e["node"]["name"]] += e["size"]
     top = sorted(totals.items(), key=lambda kv: -kv[1])[:6]
     total = sum(v for _, v in top) or 1
     w = 1000
     rows = (len(top) + 1) // 2
-    h = 116 + rows * 34
-    bar_x, bar_w = 24, w - 48
+    h = 118 + rows * 36
+    bar_x, bar_w = 30, w - 60
     segs, x = [], bar_x
     for i, (name, size) in enumerate(top):
         sw = bar_w * size / total
-        segs.append(f'<rect x="{x:.1f}" y="64" width="{sw:.1f}" height="20" fill="{PALETTE[i % len(PALETTE)]}"/>')
+        segs.append(f'<rect x="{x:.1f}" y="68" width="{sw + 0.5:.1f}" height="20" fill="{PALETTE[i % len(PALETTE)]}"/>')
         x += sw
     legend = []
     for i, (name, size) in enumerate(top):
         col, row = i % 2, i // 2
-        lx = 24 + col * 480
-        ly = 118 + row * 34
+        lx = 30 + col * 480
+        ly = 126 + row * 36
         legend.append(f"""
   <g class="rise" style="animation-delay:{i * 0.08:.2f}s">
-    <circle cx="{lx + 8}" cy="{ly - 5}" r="6" fill="{PALETTE[i % len(PALETTE)]}"/>
-    <text class="sans" x="{lx + 26}" y="{ly}" font-size="15" font-weight="600" fill="#3B3552">{esc(name)}</text>
-    <text class="mono" x="{lx + 440}" y="{ly}" font-size="13" fill="#7A7394" text-anchor="end">{size / total * 100:.1f}%</text>
+    <circle cx="{lx + 7}" cy="{ly - 5}" r="6" fill="{PALETTE[i % len(PALETTE)]}"/>
+    <text class="sf" x="{lx + 24}" y="{ly}" font-size="15" font-weight="500" fill="{INK}">{esc(name)}</text>
+    <text class="sf" x="{lx + 430}" y="{ly}" font-size="14" fill="{MUTED}" text-anchor="end">{size / total * 100:.1f}%</text>
   </g>""")
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Language spread">
   <defs>
-    <clipPath id="bar"><rect x="{bar_x}" y="64" width="{bar_w}" height="20" rx="10"/></clipPath>
-    <clipPath id="reveal"><rect class="wipe" x="{bar_x}" y="60" width="{bar_w}" height="28"/></clipPath>
+    <clipPath id="bar"><rect x="{bar_x}" y="68" width="{bar_w}" height="20" rx="10"/></clipPath>
+    <clipPath id="reveal"><rect class="wipe" x="{bar_x}" y="64" width="{bar_w}" height="28"/></clipPath>
     <style>{SHARED}
       .wipe {{ transform-box: fill-box; transform-origin: left; animation: wipe 1.6s cubic-bezier(.2,.8,.2,1) both; }}
       @keyframes wipe {{ from {{ transform: scaleX(0); }} to {{ transform: scaleX(1); }} }}
     </style>
   </defs>
-  <rect x="1" y="1" width="{w - 2}" height="{h - 2}" rx="28" fill="#FFFFFF" stroke="#EDE6FF" stroke-width="2"/>
-  <rect x="24" y="20" width="168" height="26" rx="13" fill="#FFEAF2"/>
-  <text class="mono" x="40" y="38" font-size="12" font-weight="700" fill="#A8426F" letter-spacing="1">language.spread</text>
-  <text class="mono" x="{w - 24}" y="38" font-size="11" fill="#A39CBB" text-anchor="end">owned public repos</text>
-  <rect x="{bar_x}" y="64" width="{bar_w}" height="20" rx="10" fill="#F4EEFF"/>
+  <rect x="0.75" y="0.75" width="{w - 1.5}" height="{h - 1.5}" rx="31.5" fill="{CARD}" stroke="{FRAME}" stroke-width="1.5"/>
+  <text class="sf eyebrow" x="30" y="44" fill="{BRONZE}">LANGUAGES</text>
+  <text class="sf" x="{w - 30}" y="44" font-size="12" fill="{FAINT}" text-anchor="end">Owned public repos, notebooks excluded</text>
+  <rect x="{bar_x}" y="68" width="{bar_w}" height="20" rx="10" fill="{TILE}"/>
   <g clip-path="url(#bar)"><g clip-path="url(#reveal)">{"".join(segs)}</g></g>
   {"".join(legend)}
 </svg>

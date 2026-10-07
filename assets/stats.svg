@@ -1,42 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="232" viewBox="0 0 1000 232" role="img" aria-label="GitHub activity">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="236" viewBox="0 0 1000 236" role="img" aria-label="GitHub activity">
   <defs><style>
-      .sans { font-family: 'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif; }
-      .mono { font-family: 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
-      .rise { animation: rise .8s ease-out both; }
-      @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      .sf { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 1.6px; }
+      .rise { animation: rise .8s cubic-bezier(.2,.8,.2,1) both; }
+      @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
       @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
 </style></defs>
-  <rect x="1" y="1" width="998" height="230" rx="28" fill="#FFFFFF" stroke="#EDE6FF" stroke-width="2"/>
-  <rect x="24" y="20" width="148" height="26" rx="13" fill="#F4EEFF"/>
-  <text class="mono" x="40" y="38" font-size="12" font-weight="700" fill="#7B68C8" letter-spacing="1">github.activity</text>
-  <text class="mono" x="976" y="38" font-size="11" fill="#A39CBB" text-anchor="end">updated 2026-10-07</text>
+  <rect x="0.75" y="0.75" width="998.5" height="234.5" rx="31.5" fill="#FFFDF9" stroke="#E4D9C6" stroke-width="1.5"/>
+  <text class="sf eyebrow" x="30" y="44" fill="#9C7A54">GITHUB ACTIVITY</text>
+  <text class="sf" x="970" y="44" font-size="12" fill="#A39B8E" text-anchor="end">Updated 2026-10-07</text>
   
   <g class="rise" style="animation-delay:0.00s">
-    <rect x="24" y="62" width="226" height="104" rx="18" fill="#F4EEFF"/>
-    <rect x="42" y="62" width="46" height="5" rx="2.5" fill="#B9A6F5"/>
-    <text class="sans" x="42" y="112" font-size="40" font-weight="800" fill="#3B3552">62</text>
-    <text class="sans" x="42" y="136" font-size="13.5" font-weight="700" fill="#4F3FA0">contributions</text>
-    <text class="mono" x="42" y="154" font-size="10.5" fill="#8D86A6">last 12 months</text>
+    <rect x="28.0" y="66" width="222" height="106" rx="22" fill="#2B2620"/>
+    <text class="sf" x="50.0" y="118" font-size="42" font-weight="700" fill="#F5EFE4" letter-spacing="-1.2">62</text>
+    <text class="sf" x="50.0" y="142" font-size="14" font-weight="600" fill="#EBD9B8">Contributions</text>
+    <text class="sf" x="50.0" y="159" font-size="12" fill="#A89F90">Last 12 months</text>
   </g>
-  <g class="rise" style="animation-delay:0.12s">
-    <rect x="266" y="62" width="226" height="104" rx="18" fill="#FFEAF2"/>
-    <rect x="284" y="62" width="46" height="5" rx="2.5" fill="#FFB8D6"/>
-    <text class="sans" x="284" y="112" font-size="40" font-weight="800" fill="#3B3552">18</text>
-    <text class="sans" x="284" y="136" font-size="13.5" font-weight="700" fill="#A8426F">active days</text>
-    <text class="mono" x="284" y="154" font-size="10.5" fill="#8D86A6">days with a commit</text>
+  <g class="rise" style="animation-delay:0.10s">
+    <rect x="266.5" y="66" width="222" height="106" rx="22" fill="#F5EFE4"/>
+    <text class="sf" x="288.5" y="118" font-size="42" font-weight="700" fill="#1D1B18" letter-spacing="-1.2">18</text>
+    <text class="sf" x="288.5" y="142" font-size="14" font-weight="600" fill="#4A4339">Active days</text>
+    <text class="sf" x="288.5" y="159" font-size="12" fill="#A39B8E">Days with a commit</text>
   </g>
-  <g class="rise" style="animation-delay:0.24s">
-    <rect x="508" y="62" width="226" height="104" rx="18" fill="#E8F5FE"/>
-    <rect x="526" y="62" width="46" height="5" rx="2.5" fill="#9FD3F5"/>
-    <text class="sans" x="526" y="112" font-size="40" font-weight="800" fill="#3B3552">0</text>
-    <text class="sans" x="526" y="136" font-size="13.5" font-weight="700" fill="#2A6A9B">current streak</text>
-    <text class="mono" x="526" y="154" font-size="10.5" fill="#8D86A6">consecutive days</text>
+  <g class="rise" style="animation-delay:0.20s">
+    <rect x="505.0" y="66" width="222" height="106" rx="22" fill="#F5EFE4"/>
+    <text class="sf" x="527.0" y="118" font-size="42" font-weight="700" fill="#1D1B18" letter-spacing="-1.2">0</text>
+    <text class="sf" x="527.0" y="142" font-size="14" font-weight="600" fill="#4A4339">Current streak</text>
+    <text class="sf" x="527.0" y="159" font-size="12" fill="#A39B8E">Consecutive days</text>
   </g>
-  <g class="rise" style="animation-delay:0.36s">
-    <rect x="750" y="62" width="226" height="104" rx="18" fill="#E6F7EE"/>
-    <rect x="768" y="62" width="46" height="5" rx="2.5" fill="#9ADBBB"/>
-    <text class="sans" x="768" y="112" font-size="40" font-weight="800" fill="#3B3552">2</text>
-    <text class="sans" x="768" y="136" font-size="13.5" font-weight="700" fill="#2A7352">best streak</text>
-    <text class="mono" x="768" y="154" font-size="10.5" fill="#8D86A6">longest run</text>
-  </g><rect x="24" y="184" width="133" height="28" rx="14" fill="#FFFFFF" stroke="#E4DAFF"/><text class="mono" x="90" y="202" font-size="11.5" fill="#6B5FA8" text-anchor="middle">public repos 14</text><rect x="167" y="184" width="77" height="28" rx="14" fill="#FFFFFF" stroke="#E4DAFF"/><text class="mono" x="206" y="202" font-size="11.5" fill="#6B5FA8" text-anchor="middle">stars 2</text><rect x="254" y="184" width="105" height="28" rx="14" fill="#FFFFFF" stroke="#E4DAFF"/><text class="mono" x="306" y="202" font-size="11.5" fill="#6B5FA8" text-anchor="middle">followers 3</text><rect x="369" y="184" width="112" height="28" rx="14" fill="#FFFFFF" stroke="#E4DAFF"/><text class="mono" x="425" y="202" font-size="11.5" fill="#6B5FA8" text-anchor="middle">following 14</text>
+  <g class="rise" style="animation-delay:0.30s">
+    <rect x="743.5" y="66" width="222" height="106" rx="22" fill="#F5EFE4"/>
+    <text class="sf" x="765.5" y="118" font-size="42" font-weight="700" fill="#1D1B18" letter-spacing="-1.2">2</text>
+    <text class="sf" x="765.5" y="142" font-size="14" font-weight="600" fill="#4A4339">Best streak</text>
+    <text class="sf" x="765.5" y="159" font-size="12" fill="#A39B8E">Longest run</text>
+  </g><rect x="28" y="190" width="138" height="28" rx="14" fill="#FFFDF9" stroke="#E6DCCB"/><text class="sf" x="97" y="208" font-size="12.5" font-weight="500" fill="#6E675D" text-anchor="middle">14 public repos</text><rect x="176" y="190" width="80" height="28" rx="14" fill="#FFFDF9" stroke="#E6DCCB"/><text class="sf" x="216" y="208" font-size="12.5" font-weight="500" fill="#6E675D" text-anchor="middle">2 stars</text><rect x="266" y="190" width="109" height="28" rx="14" fill="#FFFDF9" stroke="#E6DCCB"/><text class="sf" x="321" y="208" font-size="12.5" font-weight="500" fill="#6E675D" text-anchor="middle">3 followers</text><rect x="386" y="190" width="116" height="28" rx="14" fill="#FFFDF9" stroke="#E6DCCB"/><text class="sf" x="444" y="208" font-size="12.5" font-weight="500" fill="#6E675D" text-anchor="middle">14 following</text>
 </svg>

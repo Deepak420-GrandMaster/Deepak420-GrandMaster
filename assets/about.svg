@@ -1,107 +1,90 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-label="What I do and what I am building">
   <defs>
-    <linearGradient id="peach" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FFF0E6"/>
-      <stop offset="1" stop-color="#FFE3EE"/>
-    </linearGradient>
     <linearGradient id="prog" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#FFB8D6"/>
-      <stop offset="1" stop-color="#B9A6F5"/>
+      <stop offset="0" stop-color="#C9A97C"/>
+      <stop offset="1" stop-color="#EBD9B8"/>
     </linearGradient>
     <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#8B7BC8" flood-opacity="0.14"/>
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#6B5434" flood-opacity="0.10"/>
     </filter>
     <style>
-      .sans { font-family: 'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif; }
-      .mono { font-family: 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
-      .rise { animation: rise .9s ease-out both; }
-      .r2 { animation-delay: .12s; } .r3 { animation-delay: .24s; } .r4 { animation-delay: .36s; } .r5 { animation-delay: .48s; }
-      @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+      .sf { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 1.6px; }
+      .rise { animation: rise .9s cubic-bezier(.2,.8,.2,1) both; }
+      .r2 { animation-delay: .1s; } .r3 { animation-delay: .2s; } .r4 { animation-delay: .3s; }
+      @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
       .fill { transform-box: fill-box; transform-origin: left; animation: fillbar 2.4s cubic-bezier(.2,.8,.2,1) both .5s; }
       @keyframes fillbar { from { transform: scaleX(0); } to { transform: scaleX(1); } }
-      .pulse { animation: pulse 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-      @keyframes pulse { 0%,100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.6); opacity: .4; } }
       @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
     </style>
   </defs>
 
-  <rect x="1" y="1" width="998" height="358" rx="28" fill="#FDFBFF" stroke="#EDE6FF" stroke-width="2"/>
+  <rect x="0.75" y="0.75" width="998.5" height="358.5" rx="31.5" fill="#F5F0E8" stroke="#E4D9C6" stroke-width="1.5"/>
 
   <!-- LEFT: what I do -->
-  <g class="sans" filter="url(#shadow)">
-    <rect x="24" y="24" width="580" height="312" rx="22" fill="#FFFFFF" stroke="#F0EAFF"/>
-  </g>
-  <g class="sans">
-    <rect x="48" y="44" width="110" height="26" rx="13" fill="#F4EEFF"/>
-    <text class="mono" x="64" y="62" font-size="12" font-weight="700" fill="#7B68C8" letter-spacing="1">what.i.do</text>
-    <text x="172" y="62" font-size="14" fill="#8D86A6">what I build and how I ship it</text>
+  <g filter="url(#shadow)"><rect x="24" y="24" width="580" height="312" rx="26" fill="#FFFDF9"/></g>
+  <g class="sf">
+    <text class="eyebrow" x="52" y="58" fill="#9C7A54">WHAT I DO</text>
+    <text x="52" y="86" font-size="21" font-weight="700" fill="#1D1B18" letter-spacing="-0.4">What I build, and how I ship it</text>
 
-    <!-- row 1 -->
+    <g transform="translate(0,-6)">
     <g class="rise">
-      <rect x="48" y="86" width="532" height="54" rx="16" fill="#F7F3FF"/>
-      <circle cx="78" cy="113" r="16" fill="#DCCFFF"/>
-      <path d="M70 108h16M70 113h16M70 118h10" stroke="#6A55C4" stroke-width="2.4" stroke-linecap="round"/>
-      <text x="108" y="108" font-size="15.5" font-weight="700" fill="#3B3552">Pipelines &amp; warehousing</text>
-      <text x="108" y="127" font-size="13" fill="#7A7394">BigQuery analytics infrastructure, end to end</text>
+      <circle cx="74" cy="132" r="17" fill="#F3ECDF"/>
+      <path d="M66 127h16M66 132h16M66 137h10" stroke="#8C6B47" stroke-width="2" stroke-linecap="round"/>
+      <text x="104" y="128" font-size="16" font-weight="600" fill="#1D1B18">Pipelines &amp; warehousing</text>
+      <text x="104" y="148" font-size="13.5" fill="#6E675D">BigQuery analytics infrastructure, end to end</text>
     </g>
-    <!-- row 2 -->
+    <line x1="52" y1="162" x2="576" y2="162" stroke="#F0E8DA"/>
+
     <g class="rise r2">
-      <rect x="48" y="148" width="532" height="54" rx="16" fill="#EFFAF4"/>
-      <circle cx="78" cy="175" r="16" fill="#BFEBD7"/>
-      <path d="M70 175l5 5 10-11" fill="none" stroke="#2F7A57" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-      <text x="108" y="170" font-size="15.5" font-weight="700" fill="#3B3552">Tracking &amp; consent</text>
-      <text x="108" y="189" font-size="13" fill="#7A7394">GA4 / GTM, server-side tagging, Consent Mode V2</text>
+      <circle cx="74" cy="192" r="17" fill="#F3ECDF"/>
+      <path d="M66 192l5.5 5.5L83 186" fill="none" stroke="#8C6B47" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="104" y="188" font-size="16" font-weight="600" fill="#1D1B18">Tracking &amp; consent</text>
+      <text x="104" y="208" font-size="13.5" fill="#6E675D">GA4 / GTM, server-side tagging, Consent Mode V2</text>
     </g>
-    <!-- row 3 -->
+    <line x1="52" y1="222" x2="576" y2="222" stroke="#F0E8DA"/>
+
     <g class="rise r3">
-      <rect x="48" y="210" width="532" height="54" rx="16" fill="#EEF8FE"/>
-      <circle cx="78" cy="237" r="16" fill="#BFE0FF"/>
-      <rect x="70" y="238" width="4" height="8" rx="1.5" fill="#2F6FA3"/>
-      <rect x="77" y="231" width="4" height="15" rx="1.5" fill="#2F6FA3"/>
-      <rect x="84" y="226" width="4" height="20" rx="1.5" fill="#2F6FA3"/>
-      <text x="108" y="232" font-size="15.5" font-weight="700" fill="#3B3552">BI &amp; dashboards</text>
-      <text x="108" y="251" font-size="13" fill="#7A7394">Looker Studio, Power BI, Apache Superset</text>
+      <circle cx="74" cy="252" r="17" fill="#F3ECDF"/>
+      <rect x="66" y="253" width="4" height="8" rx="1.5" fill="#8C6B47"/>
+      <rect x="73" y="246" width="4" height="15" rx="1.5" fill="#8C6B47"/>
+      <rect x="80" y="241" width="4" height="20" rx="1.5" fill="#8C6B47"/>
+      <text x="104" y="248" font-size="16" font-weight="600" fill="#1D1B18">BI &amp; dashboards</text>
+      <text x="104" y="268" font-size="13.5" fill="#6E675D">Looker Studio, Power BI, Apache Superset</text>
     </g>
-    <!-- row 4 -->
+    <line x1="52" y1="282" x2="576" y2="282" stroke="#F0E8DA"/>
+
     <g class="rise r4">
-      <rect x="48" y="272" width="532" height="54" rx="16" fill="#FFF1F7"/>
-      <circle cx="78" cy="299" r="16" fill="#FFC9DE"/>
-      <circle cx="78" cy="299" r="3.4" fill="#B04A7C"/>
-      <circle cx="70" cy="293" r="2.4" fill="#B04A7C"/><circle cx="86" cy="293" r="2.4" fill="#B04A7C"/>
-      <circle cx="70" cy="306" r="2.4" fill="#B04A7C"/><circle cx="86" cy="306" r="2.4" fill="#B04A7C"/>
-      <path d="M70 293L78 299L86 293M70 306L78 299L86 306" stroke="#B04A7C" stroke-width="1.2" fill="none"/>
-      <text x="108" y="294" font-size="15.5" font-weight="700" fill="#3B3552">Agentic AI</text>
-      <text x="108" y="313" font-size="13" fill="#7A7394">RAG assistants and planning agents grounded in real data</text>
+      <circle cx="74" cy="312" r="17" fill="#F3ECDF"/>
+      <circle cx="74" cy="312" r="3.2" fill="#8C6B47"/>
+      <circle cx="66" cy="306" r="2.3" fill="#8C6B47"/><circle cx="82" cy="306" r="2.3" fill="#8C6B47"/>
+      <circle cx="66" cy="318" r="2.3" fill="#8C6B47"/><circle cx="82" cy="318" r="2.3" fill="#8C6B47"/>
+      <path d="M66 306L74 312L82 306M66 318L74 312L82 318" stroke="#8C6B47" stroke-width="1.2" fill="none"/>
+      <text x="104" y="308" font-size="16" font-weight="600" fill="#1D1B18">Agentic AI</text>
+      <text x="104" y="328" font-size="13.5" fill="#6E675D">RAG assistants and planning agents grounded in real data</text>
+    </g>
     </g>
   </g>
 
-  <!-- RIGHT TOP: now building -->
-  <g class="sans" filter="url(#shadow)">
-    <rect x="624" y="24" width="352" height="196" rx="22" fill="url(#peach)" stroke="#FFE0E8"/>
-  </g>
-  <g class="sans">
-    <rect x="648" y="44" width="118" height="26" rx="13" fill="#FFFFFF" fill-opacity="0.8"/>
-    <circle class="pulse" cx="664" cy="57" r="4.5" fill="#F0709E"/>
-    <text class="mono" x="676" y="62" font-size="12" font-weight="700" fill="#B04A7C" letter-spacing="1">now.building</text>
+  <!-- RIGHT TOP: dark card -->
+  <g filter="url(#shadow)"><rect x="624" y="24" width="352" height="196" rx="26" fill="#2B2620"/></g>
+  <g class="sf">
+    <text class="eyebrow" x="650" y="58" fill="#C9A97C">NOW BUILDING</text>
+    <text x="650" y="96" font-size="23" font-weight="700" fill="#F5EFE4" letter-spacing="-0.5">Agentic RAG</text>
+    <text x="650" y="123" font-size="23" font-weight="700" fill="#F5EFE4" letter-spacing="-0.5">Travel Assistant</text>
+    <text x="650" y="148" font-size="13" fill="#A89F90">Retrieval and evaluation harness, live demo</text>
 
-    <text x="648" y="104" font-size="21" font-weight="800" fill="#3B3552">Agentic RAG</text>
-    <text x="648" y="130" font-size="21" font-weight="800" fill="#3B3552">Travel Assistant</text>
-    <text x="648" y="152" font-size="12.5" fill="#8A6F7F">retrieval + evaluation harness · live demo</text>
-
-    <text class="mono" x="648" y="182" font-size="11.5" fill="#8A6F7F">faithfulness</text>
-    <text class="mono" x="944" y="182" font-size="11.5" font-weight="700" fill="#B04A7C" text-anchor="end">0.60 → 0.92</text>
-    <rect x="648" y="190" width="296" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.85"/>
-    <rect class="fill" x="648" y="190" width="272" height="10" rx="5" fill="url(#prog)"/>
+    <text x="650" y="182" font-size="12.5" font-weight="500" fill="#A89F90">Faithfulness</text>
+    <text x="950" y="182" font-size="12.5" font-weight="700" fill="#EBD9B8" text-anchor="end">0.60 → 0.92</text>
+    <rect x="650" y="192" width="300" height="8" rx="4" fill="#4A4238"/>
+    <rect class="fill" x="650" y="192" width="276" height="8" rx="4" fill="url(#prog)"/>
   </g>
 
-  <!-- RIGHT BOTTOM: open to -->
-  <g class="sans" filter="url(#shadow)">
-    <rect x="624" y="236" width="352" height="100" rx="22" fill="#FFFFFF" stroke="#F0EAFF"/>
-  </g>
-  <g class="sans">
-    <rect x="648" y="254" width="92" height="26" rx="13" fill="#E4F6EE"/>
-    <text class="mono" x="664" y="272" font-size="12" font-weight="700" fill="#2F7A57" letter-spacing="1">open.to</text>
-    <text x="648" y="304" font-size="14.5" font-weight="700" fill="#3B3552">AI/ML &amp; Data Scientist roles</text>
-    <text x="648" y="323" font-size="13" fill="#7A7394">across Europe · available immediately</text>
+  <!-- RIGHT BOTTOM -->
+  <g filter="url(#shadow)"><rect x="624" y="236" width="352" height="100" rx="26" fill="#FFFDF9"/></g>
+  <g class="sf">
+    <text class="eyebrow" x="650" y="270" fill="#9C7A54">OPEN TO</text>
+    <text x="650" y="298" font-size="16" font-weight="600" fill="#1D1B18">AI/ML &amp; Data Scientist roles</text>
+    <text x="650" y="320" font-size="13.5" fill="#6E675D">Across Europe · available immediately</text>
   </g>
 </svg>

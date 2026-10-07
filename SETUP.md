@@ -29,9 +29,10 @@ and turn on "Include private contributions on my profile" in your GitHub profile
 
 ## Editing the cards
 - Header and about card: edit `assets/header.svg` and `assets/about.svg` directly (plain text and colours).
+- Notebook files are left out of the language card (they dominate by size); change `EXCLUDE_LANGUAGES` in `scripts/generate_stats.py` to alter that.
 - Stack chips and project cards: edit the `STACK` and `PROJECTS` lists at the top of `scripts/build_static.py`,
   then run `python scripts/build_static.py` and commit the regenerated SVGs.
-- Pastel palette: lavender `#B9A6F5`, pink `#FFB8D6`, sky `#9FD3F5`, mint `#9ADBBB`, peach `#FFCBA4`, ink `#3B3552`.
+- Palette: page beige `#F5F0E8`, card `#FFFDF9`, chip `#F5EFE4`, bronze accent `#9C7A54`, espresso `#2B2620`, ink `#1D1B18`. Type is the system font (SF Pro on Apple devices).
 - The cards carry their own background, so they look the same in GitHub light and dark mode.
 - Animations respect `prefers-reduced-motion`.
 

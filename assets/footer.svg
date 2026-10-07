@@ -1,27 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="140" viewBox="0 0 1000 140" role="img" aria-label="Footer">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#FFEAF2"/><stop offset="0.5" stop-color="#F1EBFF"/><stop offset="1" stop-color="#E4F4FD"/>
+      <stop offset="0" stop-color="#F7F2EA"/><stop offset="1" stop-color="#ECE2D2"/>
     </linearGradient>
-    <clipPath id="c"><rect width="1000" height="140" rx="28"/></clipPath>
+    <clipPath id="c"><rect width="1000" height="140" rx="32"/></clipPath>
     <style>
-      .sans { font-family: 'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif; }
-      .mono { font-family: 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
-      .rise { animation: rise .8s ease-out both; }
-      @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      .sf { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 1.6px; }
+      .rise { animation: rise .8s cubic-bezier(.2,.8,.2,1) both; }
+      @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
       @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
 
-      .w1 { animation: sway 8s ease-in-out infinite; }
-      .w2 { animation: sway 11s ease-in-out infinite reverse; }
+      .w1 { animation: sway 12s ease-in-out infinite; }
+      .w2 { animation: sway 16s ease-in-out infinite reverse; }
       @keyframes sway { 0%,100% { transform: translateX(0); } 50% { transform: translateX(-60px); } }
     </style>
   </defs>
   <g clip-path="url(#c)">
     <rect width="1000" height="140" fill="url(#bg)"/>
-    <path class="w1" d="M0 96 C 100 70, 200 120, 300 96 S 500 70, 600 96 S 800 120, 900 96 S 1100 70, 1200 96 V140 H0Z" fill="#FFFFFF" fill-opacity="0.55"/>
-    <path class="w2" d="M0 112 C 120 90, 220 132, 340 112 S 560 90, 680 112 S 900 132, 1020 112 S 1140 96, 1200 112 V140 H0Z" fill="#FFFFFF" fill-opacity="0.7"/>
+    <path class="w1" d="M0 100 C 100 78, 200 118, 300 100 S 500 78, 600 100 S 800 118, 900 100 S 1100 78, 1200 100 V140 H0Z" fill="#FFFDF9" fill-opacity="0.5"/>
+    <path class="w2" d="M0 116 C 120 98, 220 132, 340 116 S 560 98, 680 116 S 900 132, 1020 116 S 1140 102, 1200 116 V140 H0Z" fill="#FFFDF9" fill-opacity="0.75"/>
   </g>
-  <rect x="1" y="1" width="998" height="138" rx="27" fill="none" stroke="#E4DAFF" stroke-width="2"/>
-  <text class="sans" x="500" y="58" font-size="20" font-weight="700" fill="#3B3552" text-anchor="middle">Building calm, precise systems</text>
-  <text class="mono" x="500" y="84" font-size="13" fill="#7A7394" text-anchor="middle">whether a data pipeline, an AI agent, or my own career path</text>
+  <rect x="0.75" y="0.75" width="998.5" height="138.5" rx="31.5" fill="none" stroke="#E4D9C6" stroke-width="1.5"/>
+  <text class="sf" x="500" y="60" font-size="24" font-weight="700" fill="#1D1B18" text-anchor="middle" letter-spacing="-0.6">Building calm, precise systems</text>
+  <text class="sf" x="500" y="88" font-size="14" fill="#6E675D" text-anchor="middle">Whether a data pipeline, an AI agent, or my own career path</text>
 </svg>
