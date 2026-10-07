@@ -18,7 +18,7 @@
 
 <img src="assets/languages.svg" alt="Language spread across my public repos" width="100%"/>
 
-<img src="https://raw.githubusercontent.com/Deepak420-GrandMaster/Deepak420-GrandMaster/output/snake.svg" alt="Contribution snake" width="100%"/>
+<img src="https://raw.githubusercontent.com/Deepak420-GrandMaster/Deepak420-GrandMaster/output/snake.svg?v=2" alt="Contribution snake" width="100%"/>
 
 <table>
   <tr>
