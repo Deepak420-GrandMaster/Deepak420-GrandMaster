@@ -18,36 +18,36 @@
   <text class="mono" x="40" y="38" font-size="12" font-weight="700" fill="#A8426F" letter-spacing="1">language.spread</text>
   <text class="mono" x="976" y="38" font-size="11" fill="#A39CBB" text-anchor="end">owned public repos</text>
   <rect x="24" y="64" width="952" height="20" rx="10" fill="#F4EEFF"/>
-  <g clip-path="url(#bar)"><g clip-path="url(#reveal)"><rect x="24.0" y="64" width="750.1" height="20" fill="#B9A6F5"/><rect x="774.1" y="64" width="64.9" height="20" fill="#FFB8D6"/><rect x="839.0" y="64" width="64.9" height="20" fill="#9FD3F5"/><rect x="903.9" y="64" width="36.1" height="20" fill="#9ADBBB"/><rect x="939.9" y="64" width="21.6" height="20" fill="#FFCBA4"/><rect x="961.6" y="64" width="14.4" height="20" fill="#E3C8F7"/></g></g>
+  <g clip-path="url(#bar)"><g clip-path="url(#reveal)"><rect x="24.0" y="64" width="895.4" height="20" fill="#B9A6F5"/><rect x="919.4" y="64" width="30.7" height="20" fill="#FFB8D6"/><rect x="950.1" y="64" width="22.5" height="20" fill="#9FD3F5"/><rect x="972.6" y="64" width="1.7" height="20" fill="#9ADBBB"/><rect x="974.3" y="64" width="0.9" height="20" fill="#FFCBA4"/><rect x="975.2" y="64" width="0.8" height="20" fill="#E3C8F7"/></g></g>
   
   <g class="rise" style="animation-delay:0.00s">
     <circle cx="32" cy="113" r="6" fill="#B9A6F5"/>
-    <text class="sans" x="50" y="118" font-size="15" font-weight="600" fill="#3B3552">Python</text>
-    <text class="mono" x="464" y="118" font-size="13" fill="#7A7394" text-anchor="end">78.8%</text>
+    <text class="sans" x="50" y="118" font-size="15" font-weight="600" fill="#3B3552">Jupyter Notebook</text>
+    <text class="mono" x="464" y="118" font-size="13" fill="#7A7394" text-anchor="end">94.1%</text>
   </g>
   <g class="rise" style="animation-delay:0.08s">
     <circle cx="512" cy="113" r="6" fill="#FFB8D6"/>
-    <text class="sans" x="530" y="118" font-size="15" font-weight="600" fill="#3B3552">Jupyter Notebook</text>
-    <text class="mono" x="944" y="118" font-size="13" fill="#7A7394" text-anchor="end">6.8%</text>
+    <text class="sans" x="530" y="118" font-size="15" font-weight="600" fill="#3B3552">HTML</text>
+    <text class="mono" x="944" y="118" font-size="13" fill="#7A7394" text-anchor="end">3.2%</text>
   </g>
   <g class="rise" style="animation-delay:0.16s">
     <circle cx="32" cy="147" r="6" fill="#9FD3F5"/>
-    <text class="sans" x="50" y="152" font-size="15" font-weight="600" fill="#3B3552">SQL</text>
-    <text class="mono" x="464" y="152" font-size="13" fill="#7A7394" text-anchor="end">6.8%</text>
+    <text class="sans" x="50" y="152" font-size="15" font-weight="600" fill="#3B3552">Python</text>
+    <text class="mono" x="464" y="152" font-size="13" fill="#7A7394" text-anchor="end">2.4%</text>
   </g>
   <g class="rise" style="animation-delay:0.24s">
     <circle cx="512" cy="147" r="6" fill="#9ADBBB"/>
-    <text class="sans" x="530" y="152" font-size="15" font-weight="600" fill="#3B3552">HTML</text>
-    <text class="mono" x="944" y="152" font-size="13" fill="#7A7394" text-anchor="end">3.8%</text>
+    <text class="sans" x="530" y="152" font-size="15" font-weight="600" fill="#3B3552">CSS</text>
+    <text class="mono" x="944" y="152" font-size="13" fill="#7A7394" text-anchor="end">0.2%</text>
   </g>
   <g class="rise" style="animation-delay:0.32s">
     <circle cx="32" cy="181" r="6" fill="#FFCBA4"/>
-    <text class="sans" x="50" y="186" font-size="15" font-weight="600" fill="#3B3552">Shell</text>
-    <text class="mono" x="464" y="186" font-size="13" fill="#7A7394" text-anchor="end">2.3%</text>
+    <text class="sans" x="50" y="186" font-size="15" font-weight="600" fill="#3B3552">SCSS</text>
+    <text class="mono" x="464" y="186" font-size="13" fill="#7A7394" text-anchor="end">0.1%</text>
   </g>
   <g class="rise" style="animation-delay:0.40s">
     <circle cx="512" cy="181" r="6" fill="#E3C8F7"/>
-    <text class="sans" x="530" y="186" font-size="15" font-weight="600" fill="#3B3552">Dockerfile</text>
-    <text class="mono" x="944" y="186" font-size="13" fill="#7A7394" text-anchor="end">1.5%</text>
+    <text class="sans" x="530" y="186" font-size="15" font-weight="600" fill="#3B3552">Shell</text>
+    <text class="mono" x="944" y="186" font-size="13" fill="#7A7394" text-anchor="end">0.1%</text>
   </g>
 </svg>
